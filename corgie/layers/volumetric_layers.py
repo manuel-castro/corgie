@@ -47,6 +47,8 @@ class VolumetricLayer(BaseLayerType):
         if chunk_z_step is None:
             chunk_z_step = chunk_z
 
+        chunk_z = 100
+
         xy_chunks = []
         flat_chunks = []
         for zs in range(z_range[0], z_range[1], chunk_z_step):
